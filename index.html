@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width">
+    <title>ZhqQiu</title>
+    <link rel="shortcut icon" href="">
+    <link href="assets/index.css" rel="stylesheet">
+</head>
+<body class="page-home">
+<section class="container">
+    <div class="gradation-box">
+        <div class="download-group" id="download">
+
+        </div>
+    </div>
+    <div class="service-box">
+        <h2>ZhaQiu</h2>
+        <div>
+            <a href="/php">PHP</a>
+        </div>
+        <div>
+            <a href="/goLang">GoLang</a>
+        </div>
+        <div>
+            <a href="/mysql">Mysql</a>
+        </div>
+        <div>
+            <a href="/html">HTML</a>
+        </div>
+        <div>
+            <a href="/build">架构</a>
+        </div>
+        <div>
+            <a href="/linux">Linux</a>
+        </div>
+    </div>
+
+</section>
+<script src="//apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js?timestamp=1493087797214"></script>
+<script>
+    $(function () {
+        $('a').each(function () {
+            if ('' == $(this).attr('href') || $(this).attr('href') == location.href) {
+                $(this).css('color', 'red');
+            }
+        })
+    });
+</script>
+</body>
+</html>
